@@ -1,0 +1,47 @@
+# GoByeBye Default Configuration
+
+# Model settings
+model:
+  path: "assets/models/u2net.onnx"
+  type: "u2net"
+  use_gpu: false
+  device_id: 0
+
+# Processing settings  
+processing:
+  batch_size: 4
+  max_workers: 2
+  timeout_seconds: 30
+  
+# Output settings
+output:
+  format: "png"
+  quality: 95
+  preserve_metadata: true
+  
+# Alpha matting settings
+alpha_matting:
+  enabled: true
+  mode: "auto"
+  edge_size: 8
+  threshold: 0.5
+  
+# UI settings
+ui:
+  window_width: 1024
+  window_height: 768
+  theme: "light"
+  show_preview: true
+  
+# Performance settings
+performance:
+  cache_size_mb: 512
+  preload_models: true
+  parallel_processing: true
+  
+# Logging
+logging:
+  level: "info"
+  file: "logs/gobyebye.log"
+  max_size_mb: 100
+  max_backups: 5
