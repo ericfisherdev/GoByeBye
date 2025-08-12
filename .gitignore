@@ -1,3 +1,64 @@
 # Claude files
 CLAUDE.md
 local/
+
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+go.sum
+
+# Binary output
+/gobyebye
+/GoByeBye
+/bin/
+/dist/
+
+# IDE files
+.idea/
+*.swp
+*.swo
+*~
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+*.cover
+*.coverprofile
+coverage.txt
+coverage.html
+
+# Model files (too large for git)
+*.onnx
+*.pb
+*.pth
+*.h5
+*.tflite
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+/temp/
+
+# Configuration overrides
+configs/local.yaml
+configs/*.local.yaml
+
+# Output directories
+/output/
+/processed/
